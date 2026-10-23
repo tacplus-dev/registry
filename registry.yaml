@@ -90,7 +90,6 @@ services:
       visibility: private
     - name: personalauth
       id: 57
-      contract: https://github.com/tacplus-dev/personalauth.git
       visibility: private
     - name: blobstore
       id: 58
