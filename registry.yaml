@@ -160,3 +160,7 @@ vservices:
       field_id: 71
       repo: https://gitlab.com/seabeam/sonar/backend.git
       visibility: private
+    - name: minter
+      field_id: 102
+      repo: https://github.com/tacplus-dev/tacplus.git
+      visibility: public
