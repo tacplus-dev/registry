@@ -11,7 +11,7 @@ services:
     - name: kernel
       id: 8
       tenant_slice_field: 1
-      repo: git@gitlab.com:seabeam/schematic/platform/proto.git
+      repo: https://github.com/tacplus-dev/kernel.git
       visibility: private
     - name: letsencrypt
       id: 9
