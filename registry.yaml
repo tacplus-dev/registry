@@ -3,11 +3,11 @@ scope: global
 services:
     - name: sentinel
       id: 5
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: gateway
       id: 7
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: kernel
       id: 8
@@ -16,65 +16,65 @@ services:
       visibility: private
     - name: letsencrypt
       id: 9
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: graphdb
       id: 13
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: eventbus
       id: 18
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: timedb
       id: 20
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: oauth
       id: 21
       tenant_slice_field: 3
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: opa
       id: 29
       tenant_slice_field: 2
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: stratum
       id: 34
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: argus
       id: 35
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: saml
       id: 38
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: keycloak
       id: 39
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: operator
       id: 47
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: schematicctl
       id: 48
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: kmaker
       id: 49
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: samlsvc
       id: 51
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: messaging
       id: 53
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: scottyagent
       id: 54
@@ -82,19 +82,19 @@ services:
       visibility: private
     - name: mailbox
       id: 55
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: llmsettings
       id: 56
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: personalauth
       id: 57
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: blobstore
       id: 58
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: scotty
       id: 70
@@ -134,11 +134,11 @@ services:
       visibility: private
     - name: docmanager
       id: 80
-      contract: git@gitlab.com:seabeam/sonar/docmanager.git
+      contract: https://gitlab.com/seabeam/sonar/docmanager.git
       visibility: private
     - name: reveille
       id: 81
-      contract: git@gitlab.com:seabeam/sonar/docmanager.git
+      contract: https://gitlab.com/seabeam/sonar/docmanager.git
       visibility: private
     - name: doppelganger
       id: 101
@@ -147,15 +147,15 @@ services:
 vservices:
     - name: agentsensor
       field_id: 42
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: proxypolicy
       field_id: 45
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: accountingrecord
       field_id: 52
-      contract: git@gitlab.com:seabeam/schematic/platform/proto.git
+      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: query
       field_id: 71
