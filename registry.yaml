@@ -113,7 +113,7 @@ services:
       visibility: private
     - name: llmproxy
       id: 75
-      repo: https://gitlab.com/seabeam/sonar/backend.git
+      repo: https://github.com/tacplus-dev/llmproxy.git
       visibility: private
     - name: profile
       id: 76
