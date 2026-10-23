@@ -147,7 +147,6 @@ services:
 vservices:
     - name: agentsensor
       field_id: 42
-      contract: https://github.com/tacplus-dev/agentsensor.git
       visibility: private
     - name: proxypolicy
       field_id: 45
