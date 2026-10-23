@@ -7,7 +7,7 @@ services:
       visibility: private
     - name: gateway
       id: 7
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/gateway.git
       visibility: private
     - name: kernel
       id: 8
@@ -16,7 +16,7 @@ services:
       visibility: private
     - name: letsencrypt
       id: 9
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/letsencrypt.git
       visibility: private
     - name: graphdb
       id: 13
@@ -24,7 +24,7 @@ services:
       visibility: private
     - name: eventbus
       id: 18
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/eventbus.git
       visibility: private
     - name: timedb
       id: 20
@@ -33,7 +33,7 @@ services:
     - name: oauth
       id: 21
       tenant_slice_field: 3
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/oauth.git
       visibility: private
     - name: opa
       id: 29
@@ -66,7 +66,7 @@ services:
       visibility: private
     - name: kmaker
       id: 49
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/kmaker.git
       visibility: private
     - name: samlsvc
       id: 51
@@ -94,7 +94,7 @@ services:
       visibility: private
     - name: blobstore
       id: 58
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/blobstore.git
       visibility: private
     - name: scotty
       id: 70
@@ -151,7 +151,7 @@ vservices:
       visibility: private
     - name: proxypolicy
       field_id: 45
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/kernel.git
       visibility: private
     - name: accountingrecord
       field_id: 52
