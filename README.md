@@ -1,13 +1,15 @@
 # tacplus registry
 
-The one authority for ids that must be unique across a composed kernel: tacplus
-service ids and vservice field ids. They are field numbers in the generated
-`TokenEntitlements` message and values of the `ServiceName` enum, so two services
-anywhere in the ecosystem may never share one.
+The one place ids that must be globally unique come from: tacplus service ids and
+vservice field ids. They are field numbers in the generated `TokenEntitlements`
+message and values of the `ServiceName` enum, so two services anywhere in the
+ecosystem may never share one.
 
-`registry.yaml` is the whole registry. Each entry names the service, its id, the
-proto repo that declares it, and whether that repo is public. Private repos are
-listed too: the id space is one space, and a name leaks nothing.
+`registry.yaml` is the whole registry (`scope: global`). Each entry names the
+service, its id, and its **contract**: the repo that holds its proto. That repo
+may be public, shared with one partner, or private. The registry decides ids, not
+who may read what, and never which implementation a fleet runs: that is the fleet
+manifest's choice, so a fleet may run its own kernel under the same name and id.
 
 ## Rules
 
@@ -16,17 +18,21 @@ listed too: the id space is one space, and a name leaks nothing.
 - **Ids come from tacplus, never by hand.** From a checkout of this repo:
 
   ```bash
-  tacplus registry register NAME --kind service|vservice --repo <proto repo URL> --visibility public|private --proto-dir .
+  tacplus registry register NAME --kind service|vservice --contract <proto repo URL> --visibility public|private --proto-dir .
   ```
 
   Commit the result and open a pull request. Merge is the act of registration.
 - **Ranges.** 1-99 is the legacy range, allocated per repo before this registry
-  existed and frozen as-is. 100 is reserved (`azp`). New registrations are
-  allocated upward from 101. 2047 is the ceiling: protobuf encodes field numbers
-  up to 2047 in two bytes, so tokens stay small.
+  existed and frozen as-is, in whichever registry the service sits. 100 is
+  reserved (`azp`). This registry allocates 101-1023. A **private registry**
+  (`scope: private`, kept by a fleet owner for services that never need a global
+  id) allocates 1024-2047. 2047 is the ceiling: protobuf encodes field numbers up
+  to 2047 in two bytes, so tokens stay small.
 - **Consumers lock, they do not copy.** A proto repo's own `registry.yaml` names
-  this repo with `global:` and is synced by `tacplus registry`. Builds read only
-  the lock, so generation never depends on this repo being reachable.
+  its authorities under `registries:` (this one, and a private one if any) and is
+  synced by `tacplus registry`, which unions them and refuses a name or id that
+  appears in two. Builds read only the lock, so generation never depends on this
+  repo being reachable.
 
 ## Seed
 
