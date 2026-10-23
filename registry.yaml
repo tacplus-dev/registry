@@ -38,11 +38,11 @@ services:
     - name: opa
       id: 29
       tenant_slice_field: 2
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/opa.git
       visibility: private
     - name: stratum
       id: 34
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/stratum.git
       visibility: private
     - name: argus
       id: 35
@@ -159,7 +159,7 @@ vservices:
       visibility: private
     - name: query
       field_id: 71
-      contract: https://gitlab.com/seabeam/sonar/backend.git
+      contract: https://github.com/tacplus-dev/stratum.git
       visibility: private
     - name: minter
       field_id: 102
