@@ -58,7 +58,7 @@ services:
       visibility: private
     - name: operator
       id: 47
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/operator.git
       visibility: private
     - name: schematicctl
       id: 48
@@ -74,7 +74,7 @@ services:
       visibility: private
     - name: messaging
       id: 53
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/messaging.git
       visibility: private
     - name: scottyagent
       id: 54
@@ -82,7 +82,7 @@ services:
       visibility: private
     - name: mailbox
       id: 55
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/mailbox.git
       visibility: private
     - name: llmsettings
       id: 56
@@ -90,7 +90,7 @@ services:
       visibility: private
     - name: personalauth
       id: 57
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
+      contract: https://github.com/tacplus-dev/personalauth.git
       visibility: private
     - name: blobstore
       id: 58
