@@ -155,6 +155,10 @@ services:
       id: 105
       contract: https://github.com/tacplus-dev/gateway.git
       visibility: public
+    - name: coop
+      id: 106
+      contract: https://github.com/tacplus-dev/coop.git
+      visibility: public
 vservices:
     - name: agentsensor
       field_id: 42
