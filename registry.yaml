@@ -147,6 +147,10 @@ services:
       id: 103
       contract: https://github.com/tacplus-dev/tenantecho.git
       visibility: public
+    - name: seatrials
+      id: 104
+      contract: https://github.com/tacplus-dev/fleet-seatrials.git
+      visibility: private
 vservices:
     - name: agentsensor
       field_id: 42
