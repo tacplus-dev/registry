@@ -36,7 +36,14 @@ manifest's choice, so a fleet may run its own kernel under the same name and id.
 
 ## Seed
 
-Seeded 2026-10-23 from the three per-repo registries that existed before it:
-schematic `platform/proto` (ids 5-58, vservices 42/45/52), sonar `backend`
-(id_min 70: ids 70-79, vservice 71, and scottyagent which kept 54 when it moved),
-and sonar `docmanager` (id_min 80: 80-81). Nothing was renumbered.
+Seeded 2026-10-23 from the per-repo registries that existed before it: schematic
+`platform/proto` (ids 5-58, vservices 42/45/52) and the `query` vservice (71).
+Nothing was renumbered.
+
+## What is not here
+
+Services that belong to one product and no fleet but its owner's are registered in
+that owner's own registry, not this one. Their ids are still frozen here: this
+registry allocates 101-1023 and never hands out a 1-99 id, so an id recorded
+elsewhere in the legacy range can never collide with one allocated here. Legacy ids
+54 and 70-81 are taken this way (removed 2026-10-25).

@@ -8,16 +8,16 @@ services:
     - name: gateway
       id: 7
       contract: https://github.com/tacplus-dev/gateway.git
-      visibility: private
+      visibility: public
     - name: kernel
       id: 8
       tenant_slice_field: 1
       contract: https://github.com/tacplus-dev/kernel.git
-      visibility: private
+      visibility: public
     - name: letsencrypt
       id: 9
       contract: https://github.com/tacplus-dev/letsencrypt.git
-      visibility: private
+      visibility: public
     - name: graphdb
       id: 13
       contract: https://gitlab.com/seabeam/schematic/platform/proto.git
@@ -25,7 +25,7 @@ services:
     - name: eventbus
       id: 18
       contract: https://github.com/tacplus-dev/eventbus.git
-      visibility: private
+      visibility: public
     - name: timedb
       id: 20
       contract: https://gitlab.com/seabeam/schematic/platform/proto.git
@@ -34,16 +34,16 @@ services:
       id: 21
       tenant_slice_field: 3
       contract: https://github.com/tacplus-dev/oauth.git
-      visibility: private
+      visibility: public
     - name: opa
       id: 29
       tenant_slice_field: 2
       contract: https://github.com/tacplus-dev/opa.git
-      visibility: private
+      visibility: public
     - name: stratum
       id: 34
       contract: https://github.com/tacplus-dev/stratum.git
-      visibility: private
+      visibility: public
     - name: argus
       id: 35
       contract: https://gitlab.com/seabeam/schematic/platform/proto.git
@@ -59,7 +59,7 @@ services:
     - name: operator
       id: 47
       contract: https://github.com/tacplus-dev/operator.git
-      visibility: private
+      visibility: public
     - name: schematicctl
       id: 48
       contract: https://gitlab.com/seabeam/schematic/platform/proto.git
@@ -67,7 +67,7 @@ services:
     - name: kmaker
       id: 49
       contract: https://github.com/tacplus-dev/kmaker.git
-      visibility: private
+      visibility: public
     - name: samlsvc
       id: 51
       contract: https://gitlab.com/seabeam/schematic/platform/proto.git
@@ -75,15 +75,11 @@ services:
     - name: messaging
       id: 53
       contract: https://github.com/tacplus-dev/messaging.git
-      visibility: private
-    - name: scottyagent
-      id: 54
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
+      visibility: public
     - name: mailbox
       id: 55
       contract: https://github.com/tacplus-dev/mailbox.git
-      visibility: private
+      visibility: public
     - name: llmsettings
       id: 56
       contract: https://gitlab.com/seabeam/schematic/platform/proto.git
@@ -94,51 +90,11 @@ services:
     - name: blobstore
       id: 58
       contract: https://github.com/tacplus-dev/blobstore.git
-      visibility: private
-    - name: scotty
-      id: 70
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
-    - name: scottypersonal
-      id: 72
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
-    - name: work
-      id: 73
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
-    - name: weather
-      id: 74
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
+      visibility: public
     - name: llmproxy
       id: 75
       contract: https://github.com/tacplus-dev/llmproxy.git
-      visibility: private
-    - name: profile
-      id: 76
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
-    - name: beagle
-      id: 77
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
-    - name: otto
-      id: 78
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
-    - name: tally
-      id: 79
-      contract: https://gitlab.com/seabeam/sonar/backend.git
-      visibility: private
-    - name: docmanager
-      id: 80
-      contract: https://gitlab.com/seabeam/sonar/docmanager.git
-      visibility: private
-    - name: reveille
-      id: 81
-      contract: https://gitlab.com/seabeam/sonar/docmanager.git
-      visibility: private
+      visibility: public
     - name: doppelganger
       id: 101
       contract: https://github.com/tacplus-dev/doppelganger.git
@@ -150,7 +106,7 @@ services:
     - name: seatrials
       id: 104
       contract: https://github.com/tacplus-dev/fleet-seatrials.git
-      visibility: private
+      visibility: public
     - name: webapp
       id: 105
       contract: https://github.com/tacplus-dev/gateway.git
@@ -170,7 +126,7 @@ vservices:
     - name: proxypolicy
       field_id: 45
       contract: https://github.com/tacplus-dev/kernel.git
-      visibility: private
+      visibility: public
     - name: accountingrecord
       field_id: 52
       contract: https://gitlab.com/seabeam/schematic/platform/proto.git
@@ -178,7 +134,7 @@ vservices:
     - name: query
       field_id: 71
       contract: https://github.com/tacplus-dev/stratum.git
-      visibility: private
+      visibility: public
     - name: minter
       field_id: 102
       contract: https://github.com/tacplus-dev/tacplus.git
