@@ -159,7 +159,7 @@ services:
       id: 106
       contract: https://github.com/tacplus-dev/coop.git
       visibility: public
-    - name: pigeon
+    - name: pigeonhost
       id: 107
       contract: https://github.com/tacplus-dev/pigeon.git
       visibility: public
