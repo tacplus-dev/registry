@@ -159,6 +159,10 @@ services:
       id: 106
       contract: https://github.com/tacplus-dev/coop.git
       visibility: public
+    - name: pigeon
+      id: 107
+      contract: https://github.com/tacplus-dev/pigeon.git
+      visibility: public
 vservices:
     - name: agentsensor
       field_id: 42
