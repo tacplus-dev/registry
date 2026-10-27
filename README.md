@@ -10,6 +10,8 @@ service, its id, and its **contract**: the repo that holds its proto. That repo
 may be public, shared with one partner, or private. The registry decides ids, not
 who may read what, and never which implementation a fleet runs: that is the fleet
 manifest's choice, so a fleet may run its own kernel under the same name and id.
+An entry with no contract has no proto home in tacplus-dev; its name and id stay
+taken all the same.
 
 ## Rules
 

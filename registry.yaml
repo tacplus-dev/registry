@@ -3,7 +3,6 @@ scope: global
 services:
     - name: sentinel
       id: 5
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: gateway
       id: 7
@@ -20,7 +19,6 @@ services:
       visibility: public
     - name: graphdb
       id: 13
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: eventbus
       id: 18
@@ -28,7 +26,6 @@ services:
       visibility: public
     - name: timedb
       id: 20
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: oauth
       id: 21
@@ -46,15 +43,12 @@ services:
       visibility: public
     - name: argus
       id: 35
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: saml
       id: 38
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: keycloak
       id: 39
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: operator
       id: 47
@@ -62,7 +56,6 @@ services:
       visibility: public
     - name: schematicctl
       id: 48
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: kmaker
       id: 49
@@ -70,7 +63,6 @@ services:
       visibility: public
     - name: samlsvc
       id: 51
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: messaging
       id: 53
@@ -82,7 +74,6 @@ services:
       visibility: public
     - name: llmsettings
       id: 56
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: personalauth
       id: 57
@@ -129,7 +120,6 @@ vservices:
       visibility: public
     - name: accountingrecord
       field_id: 52
-      contract: https://gitlab.com/seabeam/schematic/platform/proto.git
       visibility: private
     - name: query
       field_id: 71
