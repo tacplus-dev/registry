@@ -23,7 +23,9 @@ taken all the same.
   tacplus registry register NAME --kind service|vservice --contract <proto repo URL> --visibility public|private --proto-dir .
   ```
 
-  Commit the result and open a pull request. Merge is the act of registration.
+  `tacplus.yaml` names the tacplus line this runs with (`tacplus: "2.4"`, the
+  first line with `registry register`). Commit the result and open a pull
+  request. Merge is the act of registration.
 - **Ranges.** 1-99 is the legacy range, allocated per repo before this registry
   existed and frozen as-is, in whichever registry the service sits. 100 is
   reserved (`azp`). This registry allocates 101-1023. A **private registry**
