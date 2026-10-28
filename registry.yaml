@@ -110,6 +110,10 @@ services:
       id: 107
       contract: https://github.com/tacplus-dev/pigeon.git
       visibility: public
+    - name: redo
+      id: 108
+      contract: https://github.com/tacplus-dev/redo.git
+      visibility: public
 vservices:
     - name: agentsensor
       field_id: 42
