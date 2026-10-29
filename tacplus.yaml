@@ -1,5 +1,6 @@
-# The compiler line this repository runs `tacplus registry register` with: the
-# looper runs that line's latest patch (tacplus-dev/tacplus#161). 2.4 is the
-# first line with `register`. This repo has no protos, so there is nothing to
-# build: the file only names the floor.
-tacplus: "2.4"
+# The compiler line this repository runs `tacplus registry register` with. The
+# floor follows the latest released MAJOR.MINOR line, and the looper runs that
+# line's latest patch (tacplus-dev/tacplus#161). 2.4 is the first line with
+# `register`. This repo has no protos, so there is nothing to build: the file
+# only names the floor.
+tacplus: "2.5"
