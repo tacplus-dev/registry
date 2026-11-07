@@ -3,4 +3,4 @@
 # line's latest patch (tacplus-dev/tacplus#161). 2.4 is the first line with
 # `register`. This repo has no protos, so there is nothing to build: the file
 # only names the floor.
-tacplus: "2.5"
+tacplus: "2.6"
