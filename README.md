@@ -24,7 +24,9 @@ taken all the same.
   ```
 
   `tacplus.yaml` names the tacplus line this runs with (`tacplus: "2.6"`, the
-  latest released line; 2.4 is the first line with `registry register`).
+  latest released line; 2.4 is the first line with `registry register`), and
+  `tacplus.lock` pins its exact release and build image by digest (`tacplus pin`
+  writes it; move it with `tacplus pin`, in a commit).
   Commit the result and open a pull request. Merge is the act of registration.
 - **Ranges.** 1-99 is the legacy range, allocated per repo before this registry
   existed and frozen as-is, in whichever registry the service sits. 100 is
@@ -37,6 +39,13 @@ taken all the same.
   synced by `tacplus registry`, which unions them and refuses a name or id that
   appears in two. Builds read only the lock, so generation never depends on this
   repo being reachable.
+
+## Gates
+
+`just gates` is what every change to main passes, and what the build pipeline
+runs in the image `tacplus.lock` pins: the pin names an exact release and an
+image by digest, and `registry.yaml` loads as an authority (tacplus refuses a
+name or id that appears twice).
 
 ## Seed
 
