@@ -28,6 +28,16 @@ taken all the same.
   `tacplus.lock` pins its exact release and build image by digest (`tacplus pin`
   writes it; move it with `tacplus pin`, in a commit).
   Commit the result and open a pull request. Merge is the act of registration.
+- **Config slice fields too.** A service's tenant- or project-scope config slice
+  (`(spec.config_slice)`) is a field of the generated `TenantConfig` or
+  `ProjectConfig` aggregate, and the registry owns that field number as it owns
+  ids: a build refuses a declared slice with no registered field and never assigns
+  one. They are allocated like ids, by tacplus, append-only (never reused, never
+  renumbered), into the service's entry (`tenant_slice_field`):
+
+  ```bash
+  tacplus registry register NAME --tenant-slice|--project-slice --proto-dir .
+  ```
 - **Ranges.** 1-99 is the legacy range, allocated per repo before this registry
   existed and frozen as-is, in whichever registry the service sits. 100 is
   reserved (`azp`). This registry allocates 101-1023. A **private registry**
