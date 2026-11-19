@@ -114,6 +114,10 @@ services:
       id: 108
       contract: https://github.com/tacplus-dev/redo.git
       visibility: public
+    - name: admiral
+      id: 109
+      contract: https://github.com/tacplus-dev/admiral.git
+      visibility: public
 vservices:
     - name: agentsensor
       field_id: 42
