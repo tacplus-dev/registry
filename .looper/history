@@ -1,0 +1,1 @@
+- 2026-11-20 looper issue Pinned build image build:2.6.12 ships docker-buildx 0.38.1 with containerd v2.4.1 (CVE-2026-95839, HIGH): no tacplus release fixes it yet (#16)
