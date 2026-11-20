@@ -118,6 +118,10 @@ services:
       id: 109
       contract: https://github.com/tacplus-dev/admiral.git
       visibility: public
+    - name: skipper
+      id: 110
+      contract: https://github.com/tacplus-dev/skipper.git
+      visibility: public
 vservices:
     - name: agentsensor
       field_id: 42
