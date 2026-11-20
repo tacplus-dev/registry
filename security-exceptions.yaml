@@ -1,0 +1,10 @@
+# The known vulnerabilities this repository accepts, each until its expiry, in the form looper-scan reads
+# (tacplus-dev/looper#49: id, reason, decided_by and expires, YYYY-MM-DD; a where, a path glob, scopes it:
+# looper#182). An expired entry fails the build pipeline's security checks. Remove an entry once tacplus.lock
+# pins a release that fixes it.
+exceptions:
+  - id: CVE-2026-95839
+    reason: "containerd v2.4.1 in docker-buildx of the pinned CI image (ghcr.io/tacplus-dev/tacplus/build:2.6.12, tacplus.lock; buildx 0.38.1): the image only runs `just gates` inside CI jobs; nothing is deployed or exposed from it. No tacplus release ships a fixed buildx yet (build:2.6.13 neither). Bump the pin with `tacplus pin` and remove this entry when one does (tacplus-dev/tacplus#901; #16). Same exception as tacplus-dev/cloud's and tacplus-dev/cluster's."
+    decided_by: "jodydadescott (#16, 2026-11-20: 14 days, CI image only)"
+    expires: 2026-12-04
+    where: "**/cli-plugins/docker-buildx"
