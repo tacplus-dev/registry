@@ -12,3 +12,4 @@ Append-only: add entries at the end, never edit or remove one (CI enforces it). 
 - 2026-11-20 looper issue Register admiral (tacplus-dev/admiral), a /system service: tacplus-dev/admiral#1 cannot land until it is (#13)
 - 2026-11-20 looper issue Register skipper (tacplus-dev/skipper), a tenant-scope service: tacplus-dev/skipper#1 cannot land until it is (#15)
 - 2026-11-20 looper issue Pinned build image build:2.6.12 ships docker-buildx 0.38.1 with containerd v2.4.1 (CVE-2026-95839, HIGH): no tacplus release fixes it yet (#16)
+- 2026-11-22 looper issue Pinned images behind their lines: relock (tacplus.lock: tacplus 2.6.12 → 2.6.13, and 1 more) (#17)
