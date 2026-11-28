@@ -14,3 +14,4 @@ Append-only: add entries at the end, never edit or remove one (CI enforces it). 
 - 2026-11-20 looper issue Pinned build image build:2.6.12 ships docker-buildx 0.38.1 with containerd v2.4.1 (CVE-2026-95839, HIGH): no tacplus release fixes it yet (#16)
 - 2026-11-22 looper issue Pinned images behind their lines: relock (tacplus.lock: tacplus 2.6.12 → 2.6.13, and 1 more) (#17)
 - 2026-11-23 looper issue Pinned images behind their lines: relock (tacplus.lock: tacplus 2.6.13 → 2.6.14, and 1 more) (#18)
+- 2026-11-28 looper issue Register stratum's TenantConfig slice field (4): a build no longer assigns it (tacplus#352) (#9)
